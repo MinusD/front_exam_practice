@@ -1,0 +1,156 @@
+<!-- Страница навигации по всем страницам -->
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>by MinusD</title>
+
+    <style>
+        /* import Nunito */
+        @import url('https://fonts.googleapis.com/css?family=Nunito:100,200,300,400,500,600,700,800,900&display=swap&subset=cyrillic');
+
+        body {
+            background-color: #2e2e2e;
+            color: #bababa;
+            font-family: 'Nunito', sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .title {
+            font-size: 30px;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+
+        .list {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-gap: 20px;
+            margin: 10px 50px;
+        }
+
+        .item {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            background-color: #3e3e3e;
+            border-radius: 10px;
+            text-decoration: none;
+            color: #bababa;
+            transition: all 0.3s ease;
+
+            position: relative;
+        }
+        .item:hover {
+            background-color: #4e4e4e;
+        }
+
+        .item a {
+            text-decoration: none;
+            color: #bababa;
+            padding: 15px;
+            width: 100%;
+            height: 100%;
+        }
+
+        .item .number {
+            position: absolute;
+            top: -12px;
+            left: -12px;
+            font-size: 20px;
+            font-weight: bold;
+            margin: 3px;
+            background: #252525;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="title">Задания</div>
+    <div class="list">
+        <div class="item">
+            <a href="./Tasks/task01/index.html">
+                <div class="number">1</div>
+                <div class="task">Подключить файлы CSS, JavaScript к странице сайта</div>
+            </a>
+        </div>
+        <div class="item">
+            <a href="./Tasks/task02/index.html">
+                <div class="number">2</div>
+                <div class="task">Сделать выделение блока другим цветом и появление тени при наведении на него</div>
+            </a>
+        </div>
+        <div class="item">
+            <a href="./Tasks/task03/index.html">
+                <div class="number">3</div>
+                <div class="task">Нарисуйте любую фигуру из блока используя css. С помощью flexbox расположите его по центру страницы.</div>
+            </a>
+        </div>
+        <div class="item">
+            <a href="./Tasks/task04/index.html">
+                <div class="number">4</div>
+                <div class="task">Создать анимацию плавного исчезновения блока и плавного появления его обратно при наведении на него курсора</div>
+            </a>
+        </div>
+        <div class="item">
+            <a href="./Tasks/task05/index.html">
+                <div class="number">5</div>
+                <div class="task">Создать вертикальное меню для сайта, которое появляется при нажатии на кнопку «Меню»</div>
+            </a>
+        </div>
+        <div class="item">
+            <a href="./Tasks/task06/index.html">
+                <div class="number">6</div>
+                <div class="task">Создать вертикальное меню для сайта, которое появляется при нажатии на кнопку «Меню»</div>
+            </a>
+        </div>
+        <div class="item">
+            <a href="./Tasks/task0/index.html">
+                <div class="number"></div>
+                <div class="task"></div>
+            </a>
+        </div>
+        <div class="item">
+            <a href="./Tasks/task0/index.html">
+                <div class="number"></div>
+                <div class="task"></div>
+            </a>
+        </div>
+        <div class="item">
+            <a href="./Tasks/task0/index.html">
+                <div class="number"></div>
+                <div class="task"></div>
+            </a>
+        </div>
+        <div class="item">
+            <a href="./Tasks/task0/index.html">
+                <div class="number"></div>
+                <div class="task"></div>
+            </a>
+        </div>
+
+
+    </div>
+    <div class="card">
+        <div class="title"></div>
+        <div class="list"></div>
+    </div>
+</div>
+
+</body>
+</html>
