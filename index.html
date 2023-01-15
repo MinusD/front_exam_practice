@@ -27,6 +27,7 @@
             font-size: 30px;
             font-weight: bold;
             margin: 20px 0;
+            color: #bababa;
         }
 
         .list {
@@ -95,7 +96,21 @@
             display: flex;
             align-items: center;
             justify-content: center;
+        }
 
+        .fullScreen {
+            padding: 20px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #2e2e2e;
+            color: #bababa;
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
     </style>
 </head>
@@ -409,6 +424,28 @@
             </a>
         </div>
     </div>
+
+
+    <div class="container">
+        <a href="https://mbc-d.ru/r/front-t" style="text-decoration: none" target="_blank" class="title">Теория (click)</a>
+    <div>
+
+
+    <div class="fullScreen" id="hideImg" style="display: none">Какой-то текст<div>
+
+    <script>
+        // При нажатии на P изменяется состояние заставки
+        document.addEventListener('keydown', function (event) {
+            if (event.code === 'KeyP') {
+                let hideImg = document.getElementById('hideImg');
+                if (hideImg.style.display === 'none') {
+                    hideImg.style.display = 'block';
+                } else {
+                    hideImg.style.display = 'none';
+                }
+            }
+        });
+    </script>
 </div>
 
 </body>
